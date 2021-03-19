@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bgxanh2">
+
+        <TextView
+            android:id="@+id/title_paired_devices"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Máy in bluetooth đã kết nối"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="8dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:divider="@android:color/transparent"
+        android:dividerHeight="3dp"
+        android:id="@+id/paired_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:stackFromBottom="true" />
+</LinearLayout>

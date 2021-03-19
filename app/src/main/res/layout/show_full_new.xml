@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/back1"
+
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/ll_main_login"
+        android:background="@drawable/rounded_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="18dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="2dp"
+            android:id="@+id/hinhloadve"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/barschart1">
+
+        </de.hdodenhof.circleimageview.CircleImageView> />
+
+        <TextView
+            android:id="@+id/tieude"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Tiêu đề"
+            android:textColor="@color/blue"
+            android:textSize="18dp"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Giới thiệu"
+            android:drawableLeft="@drawable/drawable_mota"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:layout_marginLeft="8dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_spinner"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/mota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/transparent"
+
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:maxLines="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/blue"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/blue" />
+
+        <TextView
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Giá tiền"
+            android:drawableLeft="@drawable/drawable_tong"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:layout_marginLeft="8dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/giatien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/blue"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/transparent"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:maxLines="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="3dp"
+                    android:textSize="12dp"
+                    />
+            </RelativeLayout>
+            </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/line_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/blue">
+
+        </RelativeLayout>
+
+        <TextView
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/drawable_diachi"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Địa chỉ"
+            android:textColor="@color/blue"
+
+            android:textSize="14dp"
+            android:layout_marginLeft="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/xa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                android:textColor="@color/blue"
+                android:background="@color/transparent"
+
+                android:drawablePadding="5dp"
+                android:text="Phường 2"
+                android:fontFamily="@font/montserrat_medium"
+                android:maxLines="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="3dp"
+                android:textSize="12dp"
+                android:layout_marginRight="11dp"
+                />
+            <EditText
+                android:id="@+id/huyen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                android:textColor="@color/blue"
+                android:background="@color/transparent"
+                android:drawablePadding="5dp"
+                android:text="Bình Thạnh"
+                android:fontFamily="@font/montserrat_medium"
+                android:maxLines="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="3dp"
+                android:textSize="12dp"
+                android:layout_marginRight="11dp"
+                />
+
+
+        </LinearLayout>
+        <RelativeLayout
+
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/tinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                android:textColor="@color/blue"
+                android:background="@color/transparent"
+                android:drawablePadding="5dp"
+                android:text="Hồ Chí Minh"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:maxLines="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="3dp"
+                android:textSize="12dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line_4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/blue" />
+        <TextView
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:drawableLeft="@drawable/drawable_thang"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Thời gian"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:layout_marginLeft="8dp" />
+
+
+
+
+        <RelativeLayout
+
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/ngaydang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/blue"
+                android:layout_marginEnd="10dp"
+                android:background="@color/transparent"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:maxLines="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="3dp"
+                android:textSize="12dp"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/line_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/blue" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_weight="10"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:background="?selectableItemBackground"
+            android:fontFamily="@font/montserrat_medium"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="@string/quenmatkhau"
+            android:textColor="@color/blue"
+            android:textSize="11dp"
+            android:visibility="gone"
+            android:layout_marginLeft="30dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

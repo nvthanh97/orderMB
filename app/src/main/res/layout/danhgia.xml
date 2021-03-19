@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bgxanh2">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="5dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="10dp"
+            android:src="@drawable/ic_back_per"
+            android:layout_marginLeft="6dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Bình luận - Đánh giá"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="8dp" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/lvBanAn"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="3dp"
+        android:layout_below="@id/actionBar"
+        android:layout_marginBottom="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_below="@+id/lvBanAn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="-100dp"
+        android:orientation="horizontal"
+        android:textColor="#ff0099"
+        android:background="@drawable/menu_duoi"
+        android:textColorHint="#ff0099">
+
+
+        <ImageView
+            android:id="@+id/imHinhDG"
+            android:padding="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bak"
+            android:src="@drawable/addimage">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="8"
+                android:background="@drawable/bak2"
+                android:gravity="center"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="25dp"
+                    android:src="@android:drawable/star_off"
+                    android:layout_height="25dp">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="30dp"
+                    android:src="@android:drawable/star_off"
+                    android:layout_height="30dp">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/star3"
+                    android:layout_width="35dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@android:drawable/star_off"
+                    android:layout_height="35dp">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/star4"
+                    android:layout_width="38dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@android:drawable/star_off"
+                    android:layout_height="38dp">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/star5"
+                    android:layout_width="40dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@android:drawable/star_off"
+                    android:layout_height="40dp">
+                </ImageView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/bak"
+                android:weightSum="10"
+                android:layout_height="48dp">
+                <EditText
+                    android:id="@+id/motachitiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="7"
+                    android:hint="Nhận xét"
+                    style="@style/CardView.Light"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/blue"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="2dp"
+                    android:textColorHint="#3F51B5"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@+id/btndanhcmngia"
+                    android:layout_width="59dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:background="@android:drawable/ic_menu_send"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

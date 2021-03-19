@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:weightSum="10"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bgxanh2">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="5dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="10dp"
+            android:src="@drawable/ic_back_per"
+            android:layout_marginLeft="6dp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Chi tiết nhà hàng"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="8dp" />
+    </RelativeLayout>
+    <GridView
+        android:layout_weight="9.7"
+        android:id="@+id/gridviewkq"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </GridView>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_below="@+id/gridviewkq"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnthongtin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="Xem thực đơn"
+            android:background="@drawable/duong_vienbtn"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textSize="13dp" />
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btngoidien"
+
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/duong_vienbtn"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Đặt chỗ trước"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="13dp" />
+            <Button
+                android:id="@+id/btndanhgia"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/duong_vienbtn"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="Xem đánh giá"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

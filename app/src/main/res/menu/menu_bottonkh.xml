@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/itGoiY"
+            android:title="Đề xuất"
+            android:textColor="#8545F5"
+            android:icon="@drawable/recommendation"
+            android:checked="true"
+            />
+
+        <item
+            android:id="@+id/itLoai"
+            android:title="Tìm nhanh"
+            android:textColor="#8545F5"
+            android:icon="@drawable/list"
+            />
+
+        <item
+            android:id="@+id/itGanToi"
+            android:title="Khám phá"
+            android:textColor="#8545F5"
+            android:icon="@drawable/schoolbus"
+            />
+        <item
+            android:id="@+id/itQR"
+            android:title="Quét mã"
+            android:textColor="#8545F5"
+            android:icon="@drawable/qrcode"
+            />
+    </group>
+
+
+</menu>
+
+
+
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_height="70dp"
+    android:weightSum="10"
+    android:background="@drawable/shadow">
+    <androidx.cardview.widget.CardView
+        android:layout_width="65dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="8dp"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/hinhloadve"
+            android:layout_height="match_parent"
+            android:src="@drawable/bepp"
+            android:layout_width="match_parent">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/txtTenMonAnThanhToan"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tên món"
+                android:layout_marginLeft="5dp"
+                android:textColor="#0000FF"
+                android:textSize="16sp">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <TextView
+                android:id="@+id/txtGiaTienThanhToan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:shadowColor="@color/colorBlack"
+                android:text="Đơn giá "
+                android:textColor="#660099"
+                android:textSize="12sp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_width="20dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/xx" />
+
+        <TextView
+            android:id="@+id/txtSoLuongThanhToan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="#0000FF"
+            android:textSize="22sp">
+
+        </TextView>
+    </LinearLayout>
+
+
+</LinearLayout>

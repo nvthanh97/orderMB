@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/shadow"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/iconBan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/req"
+        />
+
+    <TextView
+        android:id="@+id/TenBan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/iconBan"
+        android:gravity="center|left"
+        android:text="null"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_gravity="center"
+    android:background="@color/colorWhite"
+    android:foregroundGravity="center"
+    android:layout_height="125dp"
+    android:layout_width="110dp">
+    <ImageView
+        android:id="@+id/imHienThiDSMonAn"
+        android:layout_width="110dp"
+        android:layout_height="108dp"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="85dp"
+        android:foregroundGravity="center"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/txtGiaTienDSMonAn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/background_lammo"
+            android:textAlignment="center"
+            android:textColor="#FAF5CE"
+            android:text="1200000"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+        <TextView
+            android:background="@color/colorWhite"
+            android:id="@+id/txtTenDSMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="top|center"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Gà nướng"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

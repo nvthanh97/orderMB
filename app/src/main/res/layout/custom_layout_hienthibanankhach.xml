@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginRight="@dimen/size5dp"
+        android:id="@+id/txtTenBanAn"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="@dimen/size10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <ImageView
+        android:foregroundGravity="center"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/imBanAn"
+        android:layout_centerHorizontal="true"
+        android:layout_width="112sp"
+        android:layout_height="@dimen/size100dp"
+        android:src="@drawable/banancokhach"
+        android:layout_below="@+id/txtTenBanAn"
+
+        />
+
+
+    <LinearLayout
+        android:layout_below="@+id/imBanAn"
+        android:layout_width="wrap_content"
+        android:background="@drawable/shadow"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:id="@+id/imGoiMon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/food1"
+            android:layout_below="@+id/imBanAn"
+            android:layout_margin="@dimen/size5dp"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/imThanhToan"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/test"
+            android:layout_below="@+id/imBanAn"
+            android:layout_toRightOf="@+id/imGoiMon"
+            android:layout_margin="@dimen/size5dp"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/imAnButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/imBanAn"
+            android:src="@drawable/audio"
+            android:layout_toRightOf="@+id/imThanhToan"
+            android:layout_margin="@dimen/size5dp"
+            android:visibility="invisible"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/troly1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="@dimen/size10dp"
+            android:layout_weight="1"
+            android:src="@drawable/ani"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/troly2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/duong_vientak"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:text="Xin chào! Em là trợ lý gọi món, A/C nhấn vào mic để nói chuyện với em ^^"
+            android:textAlignment="center"
+            android:textColor="#FBFAFC"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="visible">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="370dp"
+        android:layout_height="80dp">
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="ToggleButton" />
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/toggleButton1"
+            android:layout_marginTop="5dp"
+            android:scrollbarSize="@dimen/size10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="47dp" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

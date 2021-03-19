@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="130dp"
+    android:background="@drawable/shadow">
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:id="@+id/hinhloadve"
+            android:layout_margin="5dp"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="@drawable/round_outline"
+            android:src="@drawable/bepp">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/size5dp"
+                    android:src="@drawable/speaking"
+                    android:textSize="14sp" />
+                <TextView
+
+                    android:id="@+id/tieude"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginTop="5dp"
+                    android:text="Tiêu đề"
+                    android:textColor="#0000FF"
+                    android:textSize="14sp">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/size5dp"
+                    android:src="@drawable/speaking"
+                    android:textSize="15sp">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/mota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size5dp"
+                    android:text="Mô tả"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textStyle="bold"
+                    android:textColor="#1532D6"
+                    android:textSize="13sp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_marginLeft="@dimen/size5dp"
+
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/money"
+                    android:textColor="#660099"
+                    android:textSize="15sp">
+
+                </ImageView>
+                <TextView
+                    android:id="@+id/giatien"
+                    android:layout_marginLeft="@dimen/size5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá tiền"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="#BD5851"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_marginLeft="@dimen/size5dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/notebook"
+                    android:textColor="#660099"
+                    android:textSize="15sp">
+
+                </ImageView>
+                <TextView
+                    android:id="@+id/xa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Xã"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_marginLeft="@dimen/size5dp"
+                    android:textColor="#660099"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/huyen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Huyện"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_marginLeft="@dimen/size5dp"
+                    android:textColor="#660099"
+                    android:textSize="12sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tinh"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tỉnh"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="#660099"
+                    android:textSize="12sp">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

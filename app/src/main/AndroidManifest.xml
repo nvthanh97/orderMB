@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.thanhnguyen.smartordermienbac">
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <application
+        tools:replace="android:label"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SmartOrder"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1692564421396252~3450266011"/>
+        <activity
+            android:name="com.thanhnguyen.smartordermienbac.Func.MainActivity"
+            android:label="@string/title_activity_main" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.NhaBepHienMon" android:screenOrientation="portrait" />
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.NhaBepNhanDL" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.thanhnguyen.smartordermienbac.splash_screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashscreenTheme">>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http"
+                    android:host="http://appviet.store"
+                    android:pathPrefix="/huongdan" />
+                <!-- note that the leading "/" is required for pathPrefix-->
+                <!-- Accepts URIs that begin with "example://gizmos” -->
+                <data android:scheme="http://appviet.store"
+                    android:host="huongdan" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.dangky" />
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.home" />
+        <activity
+            android:name="com.thanhnguyen.smartordermienbac.Func.ThemBanAnActivity"
+            android:theme="@style/Theme.MyDialog" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.thanhnguyen.smartordermienbac.Func.SoLuongActivity"
+            android:theme="@style/Theme.MyDialog" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.thanhnguyen.smartordermienbac.Func.SuaBanAnActivity"
+            android:theme="@style/Theme.MyDialog" android:screenOrientation="portrait"/>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.ThanhToanActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.thanhnguyen.smartordermienbac.Func.ThemLoaiThucDonActivity"
+            android:theme="@style/Theme.MyDialog" android:screenOrientation="portrait"/>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.ThemThucDonActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.thanhnguyen.smartordermienbac.FragmentApp.ShowNhanVien" android:screenOrientation="portrait"/>
+        <activity android:name="com.thanhnguyen.smartordermienbac.DAO.BanAnDAO" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.thanhnguyen.smartordermienbac.Func.updatesoluong"
+             android:theme="@style/Theme.MyDialog" android:screenOrientation="portrait"/>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.HTLichSu" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.thanhnguyen.smartordermienbac.Func.GopBanAnActivity"
+            android:theme="@style/Theme.MyDialog" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.HTThongKe" android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.thanhnguyen.smartordermienbac.Func.thoithien"
+            android:theme="@style/Theme.MyDialog" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.FragmentApp.quenmk" android:theme="@style/Theme.MyDialog" android:screenOrientation="portrait"></activity>
+
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.DeviceListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.inHoaDon" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.FragmentApp.noti"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.DangBai" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.FragmentApp.kichhoat" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.dangnhap" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.homekhachhang" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.FragmentApp.hot" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.FragmentApp.show_full" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.FragmentApp.hienthitungloai" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.KhachXemThucDon" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.KhachXemDSMon" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.Qrcode" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.Khachthembanan" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.FragmentApp.ShowTableKhach" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.CustomAdapter.AdapterHienThiBanAnKhach" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.homek" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.ThanhToanActivityKhach" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.HtThongKeMonAn" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.VoiceRecoveryActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.MyActivity" android:screenOrientation="portrait"></activity>
+
+        <activity android:name="com.thanhnguyen.smartordermienbac.FragmentApp.dattruoc"  android:theme="@style/Theme.MyDialog" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.Func.danhgia" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.read_webview"></activity>
+        <activity android:name="com.thanhnguyen.smartordermienbac.mua_goi_cuoc"></activity>
+        <activity android:name=".nhapnguyenlieu"></activity>
+        <activity android:name=".Func.themnguyenlieu"></activity>
+        <activity android:name=".themdonvitinh"></activity>
+        <activity android:name=".nhapkho"></activity>
+
+    </application>
+</manifest>

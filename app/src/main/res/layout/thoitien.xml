@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="265dp"
+    android:background="@drawable/rounded_white"
+    >
+
+    <TextView
+        android:id="@+id/txtTongTien"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="2dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/menutren"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:text=""
+        android:layout_height="40dp">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtienkhachdua"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shadow"
+            android:padding="@dimen/size10dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_margin="@dimen/size10dp"
+            android:textSize="14sp"
+            android:textColor="@color/blue"
+            android:hint="Khách đưa "
+            android:textColorHint="@color/colorGray"
+            />
+        <TextView
+            android:id="@+id/txtTinhTrang"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:text=".000 VND"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/blue" />
+    <TextView
+        android:id="@+id/txtthoilai"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:text=""
+        android:layout_height="50dp">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btntinh"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/duong_vienbtn"
+            android:text="Tính" />
+
+        <Button
+            android:id="@+id/xong"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"
+            android:background="@drawable/duong_vienbtn"
+            android:text="Xong" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

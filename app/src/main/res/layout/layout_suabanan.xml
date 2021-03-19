@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="150dp"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_white"
+    >
+
+    <EditText
+        android:id="@+id/edSuaTenBanAn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_new"
+        android:padding="@dimen/size10dp"
+        android:layout_margin="@dimen/size10dp"
+        android:textColor="#03A9F4"
+        android:hint="Chuyển tới bàn: ..."
+        android:textColorHint="#2196F3"
+        />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnDongYSuaBanAn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xong"
+        android:background="@drawable/duong_vienbtn"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

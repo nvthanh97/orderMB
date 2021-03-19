@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/shadow"
+    >
+
+    <ImageView
+        android:id="@+id/imHinhNhanVien"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/uss"
+        android:layout_margin="@dimen/size10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtTenNhanVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Tên nhân viên"
+        android:layout_toRightOf="@+id/imHinhNhanVien"
+        android:layout_marginTop="@dimen/size10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        />
+
+    <TextView
+        android:id="@+id/txtSDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09407409875"
+        android:layout_toRightOf="@+id/imHinhNhanVien"
+        android:layout_marginTop="@dimen/size10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_below="@+id/txtTenNhanVien"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="160dp"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_white"
+
+    >
+
+    <EditText
+        android:id="@+id/edThemLoaiThucDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_new"
+        android:padding="@dimen/size10dp"
+        android:layout_margin="@dimen/size10dp"
+        android:textColor="#9C27B0"
+        android:hint="@string/tenloai"
+        android:textColorHint="#2196F3"
+        />
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:id="@+id/btnDongYThemLoaiThucDon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/duong_vienbtn"
+        android:text="Xác nhận"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

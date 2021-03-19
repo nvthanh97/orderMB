@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:layout_height="70dp"
+
+    android:background="@drawable/shadow">
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/hinhloadve"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/hot">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+
+                android:id="@+id/txttenbanls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Tên món"
+                android:textColor="@color/blue"
+                android:textSize="18sp">
+
+            </TextView>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/xx"
+                android:layout_height="15dp">
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/txtngaygoils"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lần gọi"
+                android:textColor="@color/colorRed"
+                android:layout_marginLeft="5dp"
+                android:textSize="14sp">
+
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

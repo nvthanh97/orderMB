@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/shadow"
+
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivCustomSpinner"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/barschart" >
+
+   </de.hdodenhof.circleimageview.CircleImageView>
+
+
+    <TextView
+
+        android:id="@+id/tvCustomSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center|left"
+        android:textColorHint="@drawable/shadow"
+        android:text="Androchunk"
+        android:textStyle="bold|italic"
+        android:textColor="@color/blue" />
+
+</LinearLayout>

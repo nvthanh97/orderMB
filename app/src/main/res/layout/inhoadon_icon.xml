@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:weightSum="10"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_weight="4"
+        android:id="@+id/txtTenMonAnThanhToan"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginLeft="5dp"
+        android:text="Tên món"
+        android:textColor="#010111"
+        android:textSize="16sp">
+
+    </TextView>
+    <TextView
+        android:layout_weight="4"
+        android:id="@+id/txtGiaTienThanhToan"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Đơn giá"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="right"
+        android:textColor="#010111"
+        android:textSize="16sp">
+
+    </TextView>
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/txtSoLuongThanhToan"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="5"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginLeft="5dp"
+        android:textColor="#010111"
+        android:textSize="16sp">
+
+    </TextView>
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/itTrangChu"
+            android:title="DS bàn"
+            android:icon="@drawable/ictable"
+            android:checked="true"
+            />
+
+        <item
+            android:id="@+id/itThucDon"
+            android:title="Thực đơn"
+            android:icon="@drawable/icthucdon"
+            />
+
+        <item
+            android:id="@+id/itLS"
+            android:title="Lịch sử TT"
+            android:icon="@drawable/icls"
+            />
+    </group>
+
+
+</menu>
+
+
+
+

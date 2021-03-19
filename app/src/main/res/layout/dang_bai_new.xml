@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/back1"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/ll_main_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_white"
+        android:orientation="vertical"
+        android:paddingStart="12dp"
+        android:paddingTop="18dp"
+        android:paddingEnd="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Thêm thông tin nhà hàng"
+            android:textColor="@color/blue"
+            android:textSize="18dp"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:drawablePadding="@dimen/size10dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Mã nhà hàng/quán"
+            android:drawableLeft="@drawable/drawable_left_res"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:layout_marginLeft="8dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/edMaquan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/transparent"
+
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:maxLines="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/blue"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/blue" />
+
+        <TextView
+            android:drawableLeft="@drawable/drawable_left_user"
+            android:layout_width="wrap_content"
+            android:drawablePadding="@dimen/size10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Tên nhà hàng/quán"
+            android:textColor="@color/blue"
+            android:textSize="14dp"
+            android:layout_marginLeft="8dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <EditText
+                android:id="@+id/edTenQuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/blue"
+                android:layout_marginEnd="10dp"
+                android:inputType="text"
+                android:background="@color/transparent"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:maxLines="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="3dp"
+                android:textSize="12dp"
+
+                android:layout_marginRight="10dp"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/blue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="#ff0099"
+            android:textColorHint="#ff0099">
+
+            <Spinner
+                android:id="@+id/spinTinh"
+                android:layout_weight="1"
+                android:padding="@dimen/size5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shadow_new"
+                android:textColor="#F2F4F7"
+                android:textStyle="bold|italic"
+                android:textColorHint="#F9F9FA"
+
+                >
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/spinHuyen"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:padding="@dimen/size5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shadow_new"
+                android:textColor="#1B82D3"
+                android:textStyle="bold|italic"
+                android:textColorHint="#3F51B5"
+
+                >
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinXa"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shadow_new"
+            android:textColor="#F2F4F7"
+            android:textStyle="bold|italic"
+            android:textColorHint="#F9F9FA"
+            >
+
+        </Spinner>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0099"
+            android:orientation="horizontal"
+            android:textColorHint="#ff0099">
+            <Spinner
+                android:id="@+id/loaiHinh"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/shadow_new"
+                android:textColor="#F2F4F7"
+                android:textStyle="bold|italic"
+                android:textColorHint="#F9F9FA"
+                >
+
+            </Spinner>
+
+            <ImageButton
+                android:id="@+id/ti1"
+                android:layout_width="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shadow"
+                android:scaleType="fitXY"
+                android:src="@drawable/qc">
+
+            </ImageButton>
+
+
+        </LinearLayout>
+
+
+
+
+        <ImageView
+            android:id="@+id/imHinhThucDon"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="180dp"
+            android:src="@drawable/addimage">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+
+        <TextView
+            android:drawableLeft="@drawable/drawable_diachi"
+            android:drawablePadding="@dimen/size10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Giới thiệu về nhà hàng, quán của bạn"
+            android:textColor="@color/blue"
+
+            android:textSize="14dp"
+            android:layout_marginLeft="8dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/motachitiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                android:textColor="@color/blue"
+                android:background="@color/transparent"
+
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:maxLines="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="3dp"
+                android:textSize="12dp"
+                android:layout_marginRight="11dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/line_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/blue" />
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+            <Button
+                android:id="@+id/btnThoatThemMonAn"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/login_en_yellow"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Hủy"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:textSize="13dp" />
+            <Button
+                android:id="@+id/btnDongYThemMonAn"
+                android:layout_weight="1"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/login_en_yellow"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Xong"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:background="?selectableItemBackground"
+            android:fontFamily="@font/montserrat_medium"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="@string/quenmatkhau"
+            android:textColor="@color/blue"
+            android:textSize="11dp"
+            android:visibility="gone"
+            android:layout_marginLeft="30dp" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
